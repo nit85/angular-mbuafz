@@ -1,0 +1,29 @@
+
+<form [formGroup]="hotelForm" >
+<div>
+	<label for="">Hotel Name:</label>
+	<input type="text" formControlName="name" >
+	<br>
+ 
+</div>
+	<div>
+		<label for="">Hotel Logo:</label>
+		<input type="text" formControlName="logo" >
+		<br>
+
+</div>
+		<div>
+			<label for="">Hotel Address:</label>
+			<input type="text" formControlName="address" >
+			<br>
+
+</div>
+			<div>
+				<label for="">Hotel Country:</label>
+				<input type="text" formControlName="country" >
+				<br>
+
+</div>
+<button (click)="saveHotel()">save</button>
+</form>
+<pre>{{hotelForm.value | json}}</pre>
